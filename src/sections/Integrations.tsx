@@ -5,7 +5,6 @@ import slackIcon from "@/assets/images/slack-logo.svg";
 import relumeIcon from "@/assets/images/relume-logo.svg";
 import farmerIcon from "@/assets/images/framer-logo.svg";
 import githubIcon from "@/assets/images/github-logo.svg";
-
 import IntegrationsColumn from "@/components/IntegrationsColumn";
 
 const integrations = [
@@ -63,6 +62,7 @@ export default function Integrations() {
                         <div className="h-[400px] lg:h-[800px] mt-8 lg:mt-0 overflow-hidden grid md:grid-cols-2 gap-4 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
                             <IntegrationsColumn integrations={integrations} />
                             <IntegrationsColumn
+                                reverse
                                 integrations={integrations.slice().reverse()}
                                 className="hidden md:flex"
                             />
